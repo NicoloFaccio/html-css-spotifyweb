@@ -20,6 +20,10 @@ img {
     max-width: 100%;
 }
 
+li {
+    list-style-type: none;
+}
+
 .web-app {
     height: 100vh;
 }
@@ -32,6 +36,19 @@ img {
 .container {
     display: flex;
 }
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.gray {
+    color: rgba(99, 99, 99, 1);
+}
+
 /*--------------------------HEADER-----------------------------*/
 header {
     height: 7vh;
@@ -75,6 +92,28 @@ header {
 
 .menu {
     display: none;
+}
+
+.playlist {
+    padding-left: 15px;
+    line-height: 160%;
+}
+
+.creation {
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid {
+    font-size: 300%;
+    padding-right: 10px;
+}
+
+/*-----------------------SECOND SECTION------------------------*/
+.tracks {
+    background-color: rgba(20, 25, 34, 1);
+    height: 100vh;
+    color: white;
 }
 
 /*--------------------------FOOTER-----------------------------*/
@@ -135,8 +174,13 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-
+/*-----------------------FIRST SECTION-------------------------*/
 .side-bar {
     width: 20%;
+}
+
+.side-bar div:first-child figure img:first-child {
+    display: block;
+    width: 80%;
 }
 }
