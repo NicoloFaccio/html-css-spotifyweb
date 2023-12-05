@@ -12,18 +12,51 @@ html {
     font-family: 'PT Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .general {
     height: 100vh;
 }
 
-.btn
-
+.btn {
+    border-radius: 30px;
+    padding: 7px 30px;
+}
 /*--------------------------HEADER-----------------------------*/
 header {
     height: 7vh;
     position: fixed;
     width: 100%;
     top: 0;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    background-color: rgba(8, 11, 18, 1);
+}
+
+.upgrade {
+    color: white;
+    border: 1px solid white;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+/*-----------------------FIRST SECTION-------------------------*/
+
+
+
+/*--------------------------FOOTER-----------------------------*/
+footer {
+    height: 7vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    background-color: rgba(40, 40, 40, 1);
 }
 
 
