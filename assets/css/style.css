@@ -113,8 +113,25 @@ header {
 .tracks {
     background-color: rgba(20, 25, 34, 1);
     height: 100vh;
+    width: 85%;
     color: white;
 }
+
+.why {
+    padding-block: 7vh;
+}
+
+.typology {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.when {
+    width: calc((100% / 4) - (40px / 4));
+}
+
 
 /*--------------------------FOOTER-----------------------------*/
 footer {
@@ -166,21 +183,41 @@ footer {
 
 .menu {
     display: block;
-}   
+}
+
+/*-----------------------SECOND SECTION------------------------*/
+.tracks {
+    width: 70%;
+}
+
 }
 
 @media screen and (min-width: 768px) {
-    
+/*-----------------------FIRST SECTION-------------------------*/
+.side-bar {
+    width: 25%;
+}
+
+
+/*-----------------------SECOND SECTION------------------------*/
+.tracks {
+    width: 75%;
+}
 }
 
 @media screen and (min-width: 1200px) {
 /*-----------------------FIRST SECTION-------------------------*/
 .side-bar {
-    width: 20%;
+    width: 15%;
 }
 
 .side-bar div:first-child figure img:first-child {
     display: block;
     width: 80%;
+}
+
+/*-----------------------SECOND SECTION------------------------*/
+.tracks {
+    width: 85%;
 }
 }
