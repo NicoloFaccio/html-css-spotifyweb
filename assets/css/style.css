@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
 }
 
 html {
@@ -16,13 +16,21 @@ a {
     text-decoration: none;
 }
 
-.general {
+img {
+    max-width: 100%;
+}
+
+.web-app {
     height: 100vh;
 }
 
 .btn {
     border-radius: 30px;
     padding: 7px 30px;
+}
+
+.container {
+    display: flex;
 }
 /*--------------------------HEADER-----------------------------*/
 header {
@@ -46,8 +54,28 @@ header {
 }
 
 /*-----------------------FIRST SECTION-------------------------*/
+.side-bar {
+    height: 100vh;
+    width: 15%;
+    z-index: 1;
 
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
 
+.side-bar div figure {
+    width: 60%;
+    margin: 0 auto;
+    margin-block: 10px;
+}
+
+.side-bar div:first-child figure img:first-child {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
 
 /*--------------------------FOOTER-----------------------------*/
 footer {
@@ -55,6 +83,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 2;
 
     background-color: rgba(40, 40, 40, 1);
 }
@@ -64,12 +93,41 @@ footer {
 /* ----------------------MEDIA QUERIES-------------------------*/
 /* ------------------------------------------------------------*/
 
-@media screen and (min-width: 425px) {
-    
+@media screen and (min-width: 576px) {
+
+/*-----------------------FIRST SECTION-------------------------*/
+.side-bar {
+    width: 30%;
 }
 
-@media screen and (min-width: 576px) {
-    
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.side-bar div:first-child figure {
+    width: 90%;
+}
+
+.side-bar div figure {
+    width: 15%;
+}
+
+.side-bar div span {
+    width: 70%;
+}
+
+.side-bar div:first-child figure img:first-child {
+    display: block;
+}
+
+.side-bar div:first-child figure img:last-child {
+    display: none;
+}
+
+.menu {
+    display: block;
+}   
 }
 
 @media screen and (min-width: 768px) {
@@ -77,5 +135,8 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-    
+
+.side-bar {
+    width: 20%;
+}
 }
