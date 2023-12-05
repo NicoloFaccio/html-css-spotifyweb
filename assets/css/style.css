@@ -1,5 +1,48 @@
+/*-----------------------UTILITY CLASSES---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid lime;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.general {
+    height: 100vh;
+}
+
+.btn
+
+/*--------------------------HEADER-----------------------------*/
+header {
+    height: 7vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+/* ------------------------------------------------------------*/
+/* ----------------------MEDIA QUERIES-------------------------*/
+/* ------------------------------------------------------------*/
+
+@media screen and (min-width: 425px) {
+    
+}
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
 }
