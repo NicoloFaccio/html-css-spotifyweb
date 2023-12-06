@@ -14,6 +14,7 @@ html {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 img {
@@ -49,10 +50,15 @@ li {
     color: rgba(99, 99, 99, 1);
 }
 
+.gray:hover {
+    color: white;
+}
+
 /*-----------HEADER---------------*/
 header {
     height: 80px;
     position: fixed;
+    z-index: 1;
     width: 100%;
     top: 0;
 
@@ -60,7 +66,7 @@ header {
     justify-content: end;
     align-items: center;
 
-    background-color: rgba(8, 11, 18, 1);
+    background-color: rgba(8, 11, 18, 0.7);
 }
 
 .upgrade {
@@ -77,7 +83,7 @@ header {
 /*------------FIRST SECTION--------------*/
 .side-bar {
     width: 60px;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     height: 100vh;
 
@@ -102,6 +108,10 @@ header {
 .playlist {
     padding-left: 15px;
     line-height: 160%;
+}
+
+.playlist ul {
+    overflow: auto;
 }
 
 .creation {
@@ -170,6 +180,29 @@ h3 {
     padding-top: 20px;
 }
 
+.song-played figure {
+    position: relative;   
+}
+
+.when {
+    font-size: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.when:hover {
+    display: block;
+}
+
+
+.why:hover {
+    opacity: 0.5;
+}
+
+
 /*-----FOURTH DIV-----*/
 
 .circle figure img {
@@ -202,25 +235,33 @@ footer {
     width: 10%;
 }
 
+.decoration:hover {
+    text-decoration: underline;
+}
+
 footer > div:nth-child(2) ul {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
 
+footer > div:nth-child(2) ul:first-child li a{
+    font-size: 40%;
     color: white;
 }
 
-footer > div:nth-child(2) ul:first-child li {
-    font-size: 40%;
+.play-button {
+    font-size: 200%;
 }
 
-footer > div:nth-child(2) ul:first-child li:nth-child(3) {
-    font-size: 200%;
+.play-button:hover {
+    font-size: 250%;
 }
 
 .number {
     font-size: 10px;
+    color: white;
 }
 
 .line {
