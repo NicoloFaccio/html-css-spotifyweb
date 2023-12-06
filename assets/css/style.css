@@ -70,17 +70,23 @@ header {
     text-transform: uppercase;
 }
 
+.upgrade:hover {
+    padding: 10px 40px; 
+}
+
 /*------------FIRST SECTION--------------*/
 .side-bar {
     width: 60px;
     z-index: 1;
+    position: fixed;
+    height: 100vh;
 
     background-color: rgba(0, 0, 0, 1);
     color: white;
 }
 
 .side-bar div figure {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     margin-block: 10px;
 }
@@ -112,23 +118,17 @@ header {
     display: none;
 }
 
-.profile {
-    width: 60%;
-    aspect-ratio: 1;
-    text-align: center;
-}
-
 .name {
-    object-fit: cover;
     border-radius: 50%;
+    aspect-ratio: 1/1;
     background-color: rgba(128, 128, 128, 1);
 }
 
 /*-----------SECOND SECTION----------------*/
 .tracks {
     background-color: rgba(20, 25, 34, 1);
-    height: calc(100% - 90px);
-    width: calc(100% - 60px);
+    width: 100vh;
+    padding-left: 60px;
     color: white;
     padding-block: 100px;
 }
@@ -187,9 +187,6 @@ footer {
     padding: 10px;
 
     background-color: rgba(40, 40, 40, 1);
-
-    display: flex;
-    justify-content: center;
 }
 
 .mini-menu {
@@ -208,15 +205,45 @@ footer {
 footer > div:nth-child(2) ul {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    color: white;
 }
 
-footer > div:nth-child(2) ul li {
+footer > div:nth-child(2) ul:first-child li {
     font-size: 40%;
-    padding-inline: 5px;
 }
 
-footer > div:nth-child(2) ul li:nth-child(3) {
-    font-size: 190%;
+footer > div:nth-child(2) ul:first-child li:nth-child(3) {
+    font-size: 200%;
+}
+
+.number {
+    font-size: 10px;
+}
+
+.line {
+    width: 60%;
+}
+
+footer > div:nth-child(3) {
+    display: none;
+}
+
+
+footer > div:nth-child(3) ul {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+footer > div:nth-child(3) ul li {
+    font-size: 30%;
+}
+
+.line-2 {
+    width: 20%; 
 }
 
 /* ------------------------------------------------------------*/
@@ -265,13 +292,29 @@ footer > div:nth-child(2) ul li:nth-child(3) {
 
 /*-------------SECOND SECTION-------------*/
 .tracks {
-    width: calc(100% - 200px);
+    width: 100%;
+    padding-left: 200px;
 }
 
 .typology {
     gap: 20px;
 }
 
+/*-----------FOOTER-------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-menu {
+    display: block;
+    display: flex;
+}
+
+footer > div:nth-child(3) {
+    display: block;
+}
 }
 
 @media screen and (min-width: 768px) {
