@@ -125,6 +125,29 @@ header {
     justify-content: center;
 }
 
+/*-----SECOND DIV-----*/
+
+.songs {
+    overflow: auto;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.songs > h3 {
+    padding-block: 20px;
+    font-size: 25px;
+}
+
+.songs-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.song-played {
+    width: calc((100% / 2) - (20px / 2));
+}
 
 /*--------------------------FOOTER-----------------------------*/
 footer {
