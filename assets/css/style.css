@@ -108,6 +108,22 @@ header {
     padding-right: 10px;
 }
 
+.settings {
+    display: none;
+}
+
+.profile {
+    width: 60%;
+    aspect-ratio: 1;
+    text-align: center;
+}
+
+.name {
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 1);
+}
+
 /*-----------SECOND SECTION----------------*/
 .tracks {
     background-color: rgba(20, 25, 34, 1);
@@ -154,6 +170,13 @@ h3 {
     padding-top: 20px;
 }
 
+/*-----FOURTH DIV-----*/
+
+.circle figure img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /*-----FOOTER-----*/
 footer {
     height: 80px;
@@ -161,10 +184,40 @@ footer {
     width: 100%;
     bottom: 0;
     z-index: 2;
+    padding: 10px;
 
     background-color: rgba(40, 40, 40, 1);
+
+    display: flex;
+    justify-content: center;
 }
 
+.mini-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+    display: none;
+}
+
+.mini-menu figure  {
+    width: 10%;
+}
+
+footer > div:nth-child(2) ul {
+    display: flex;
+    align-items: center;
+}
+
+footer > div:nth-child(2) ul li {
+    font-size: 40%;
+    padding-inline: 5px;
+}
+
+footer > div:nth-child(2) ul li:nth-child(3) {
+    font-size: 190%;
+}
 
 /* ------------------------------------------------------------*/
 /* ----------------------MEDIA QUERIES-------------------------*/
@@ -203,6 +256,10 @@ footer {
 }
 
 .menu {
+    display: block;
+}
+
+.settings {
     display: block;
 }
 
