@@ -93,11 +93,11 @@ header {
     color: white;
 }
 
-.side-bar:last-child {
+.of-course {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    padding-left: 10px;
 }
 
 .side-bar div figure {
@@ -281,11 +281,11 @@ footer > div:nth-child(2) ul:first-child li i{
     color: white;
 }
 
-.play-button i {
-    font-size: 40px;
+.play-button {
+    color: white;
 }
 
-.play-button i:hover {
+.play-button:hover i{
     font-size: 60px;
 }
 
@@ -333,6 +333,7 @@ footer > div:nth-child(3) ul li {
 .icons {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .side-bar:first-child div:first-child figure {
