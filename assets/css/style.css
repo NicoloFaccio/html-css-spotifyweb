@@ -85,6 +85,8 @@ header {
     width: 60px;
     z-index: 2;
     position: fixed;
+    display: flex;
+    flex-direction: column;
     height: calc(100vh - 80px);
 
     background-color: rgba(0, 0, 0, 1);
@@ -119,6 +121,7 @@ header {
 }
 
 .playlist {
+    flex-grow: 1;
     padding-left: 15px;
     line-height: 160%;
 }
