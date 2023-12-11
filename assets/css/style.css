@@ -112,18 +112,20 @@ header {
     margin-block: 10px;
 }
 
-.side-bar div:first-child figure img:first-child {
+.side-bar > div:first-child figure img:first-child {
     display: none;
 }
 
 .menu {
     display: none;
+    padding-left: 10px;
 }
 
 .playlist {
     flex-grow: 1;
-    padding-left: 15px;
     line-height: 160%;
+    height: 300px;
+    overflow: auto;
 }
 
 .playlist ul {
@@ -355,7 +357,7 @@ footer > div:nth-child(3) ul li {
     display: block;
 }
 
-.side-bar div:first-child figure img:last-child {
+.side-bar > div:first-child figure img:last-child {
     display: none;
 }
 
